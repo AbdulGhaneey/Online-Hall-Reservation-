@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Signika Negative';
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(/IMG/HOME-BACKGROUND.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.nav-link{
+    display: Flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-link h1{
+    padding-right: 80px;
+    font-size: 20px;
+    flex: 1;
+    text-align: left;
+    color: #fff;
+}
+.nav-link h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.hall-booking{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px 0.5px orangered;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.584);
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+}
+.hall-booking h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #00000097;
+}
+.hall-booking hr{
+    border-bottom: solid 1.5px orangered;
+}
+.hall-booking .hall{
+    display: Flex;
+    flex-wrap: Wrap;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+.hall-booking .hall div{
+    width: 240px;
+    height: 300px;
+    border-radius: 7px;
+    background-color: black;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hall-booking .hall .hall-1{
+    background-image: url(/IMG/multipurposeHall.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hall-booking .hall .hall-2{
+    background-image: url(/IMG/SPECIAL\ HALL.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hall-booking .hall .hall-3{
+    background-image: url(/IMG/OPEN\ HALL.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hall-booking .hall .hall-4{
+    background-image: url(/IMG/CONFERENCE\ HALL.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.hall-booking .hall div a{
+    color:  rgb(73, 4, 4);
+    font-size: 25px;
+    font-weight: 400;
+}
+.hall-booking .hall div a:hover{
+    text-decoration: none;
+    background-color: orangered;
+    padding: 70px 70px;
+    color: #000;
+    font-size: 18px;
+    transition: all 1s;
+}
+
+footer {
+    background-color: orangered;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-info, .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h3, .social-media h3 {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
