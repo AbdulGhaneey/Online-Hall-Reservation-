@@ -1,120 +1,224 @@
+/* Base Styles */
+:root {
+  --primary-color: #2a2a72;
+  --secondary-color: #ff9f43;
+  --accent-color: #4b4b4b;
+  --light-bg: #f8f9fa;
+}
+
 * {
-  margin: 0%;
-  padding: 0%;
-  font-family: "Signika Negative";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
-.all {
-  width: auto;
-  height: 750px;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(/IMG/HOME-BACKGROUND.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+body {
+  line-height: 1.6;
+  color: var(--accent-color);
 }
-.nav-link {
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.main-header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.back-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  padding: 2% 6%;
+.logo {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+/* Progress Steps */
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  position: relative;
+}
+
+.step.active {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.step span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Reservation Form */
+.reservation-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.form-title {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* CTA Button */
+.cta-button {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+.cta-button:hover {
+  background: #1a1a4a;
+}
+
+/* Payment Section */
+.payment-options {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.payment-method {
+  flex: 1;
+  padding: 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-.nav-link h1 {
-  padding-right: 80px;
-  font-size: 40px;
-  flex: 1;
-  text-align: left;
-  color: #ffffffb2;
-}
-.nav-link h1 a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+  gap: 0.5rem;
+  font-size: 1.1rem;
 }
 
-form {
-  width: auto;
-  height: auto;
-
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.payment-method.active {
+  border-color: var(--primary-color);
+  background: #f0f4ff;
 }
 
-h1 {
-  text-align: center;
+/* Footer Styles */
+.main-footer {
+  background: var(--primary-color);
   color: white;
+  padding: 3rem 0;
+  margin-top: 4rem;
 }
 
-h2 {
-  color: #ffffffb2;
-  margin: 15px;
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
-.reservation-form,
-.payment {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+
+.footer-section h3 {
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.contact-info li {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-links a {
   color: white;
-  border: #fff;
+  transition: color 0.3s ease;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+.social-links a:hover {
+  color: var(--secondary-color);
 }
 
-input {
-  width: 50%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: orangered;
-  color: #fff;
-  padding: 20px 40px;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-}
-
-button:hover {
-  text-decoration: none;
-  background-color: black;
-  padding: ;
-  color: white;
-  font-size: 18px;
-  transition: all 1s;
-}
-
-#confirmation {
-  margin-top: 20px;
-}
-footer {
-  background-color: orangered;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.contact-info,
-.social-media {
-  margin-bottom: 20px;
-}
-
-.contact-info h3,
-.social-media h3 {
-  margin-bottom: 10px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-a:hover {
-  text-decoration: none;
+@media (max-width: 768px) {
+  .form-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .progress-steps {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
 }

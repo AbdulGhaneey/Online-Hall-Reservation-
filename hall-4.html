@@ -3,80 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book our state-of-the-art Conference Hall for professional meetings and corporate events">
     <link rel="stylesheet" href="CSS/hall-4.css">
     <link rel="icon" href="./IMG/ADLAT.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
-    <title>Conference Hall</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add to all pages -->
+<link rel="stylesheet" href="CSS/global.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Conference Hall - Ikorodu Town Hall</title>
 </head>
 <body>
-    <section class="header">
-        <div class="nav-link">
-            <h1><a href="hall-booking.html">Go Back</a></h1>
+    <header class="main-header">
+        <div class="container">
+            <a href="hall-booking.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Halls
+            </a>
+            <div class="header-brand">
+                <img src="./IMG/ADLAT.png" alt="Ikorodu Town Hall Logo" class="logo">
+                <h1>Ikorodu Town Hall</h1>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <footer>
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p>Email: info@example.com</p>
-        <p>Phone: +123 456 789</p>
-        <p>Address: 123 Hall Street, Cityville</p>
-      </div>
-      <div class="social-media">
-        <h3>Follow Us</h3>
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Twitter</a>
-        <a href="#" target="_blank">Instagram</a>
-      </div>
+    <main class="hall-details">
+        <div class="container">
+            <div class="hall-header">
+                <h1><i class="fas fa-building"></i> Conference Hall</h1>
+                <p class="hall-tagline">Professional Space for Productive Meetings</p>
+            </div>
+
+            <div class="hall-features">
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>AV Equipment</h3>
+                    <p>Full HD projection & video conferencing</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>High-Speed WiFi</h3>
+                    <p>1Gbps dedicated business internet</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard"></i>
+                    <h3>Presentation Tools</h3>
+                    <p>Interactive whiteboards & flip charts</p>
+                </div>
+            </div>
+
+            <div class="pricing-section">
+                <h2><i class="fas fa-file-invoice-dollar"></i> Corporate Pricing</h2>
+                <div class="pricing-table">
+                    <div class="table-header">
+                        <div class="header-item"></div>
+                        <div class="header-item">Weekday</div>
+                        <div class="header-item">Weekend</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-item"><strong>Base Rate</strong></div>
+                        <div class="row-item">₦580,000.00</div>
+                        <div class="row-item">₦600,000.00</div>
+                    </div>
+                    
+                    <div class="table-row highlight">
+                        <div class="row-item">5% Consumption Tax</div>
+                        <div class="row-item">+₦29,000.00</div>
+                        <div class="row-item">+₦30,000.00</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-item">1% Service Charge</div>
+                        <div class="row-item">+₦5,800.00</div>
+                        <div class="row-item">+₦6,000.00</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="row-item">Refundable Deposit</div>
+                        <div class="row-item">₦30,000.00</div>
+                        <div class="row-item">₦30,000.00</div>
+                    </div>
+                    
+                    <div class="table-footer">
+                        <div class="footer-item"><strong>Total</strong></div>
+                        <div class="footer-item total">₦644,800.00</div>
+                        <div class="footer-item total">₦666,000.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="business-features">
+                <h2><i class="fas fa-business-time"></i> Corporate Amenities</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-print"></i>
+                        <h3>Printing Services</h3>
+                        <p>On-site professional printing</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-coffee"></i>
+                        <h3>Catering</h3>
+                        <p>Business lunch packages</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Audio Systems</h3>
+                        <p>Professional sound equipment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="book.html" class="cta-button">
+                    Schedule Conference <i class="fas fa-calendar-alt"></i>
+                </a>
+                <p class="disclaimer">*Includes basic AV setup and technical support</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Ikorodu Town Hall Complex</li>
+                        <li><i class="fas fa-phone"></i> +234 812 345 6789</li>
+                        <li><i class="fas fa-envelope"></i> corporate@ikoroduhall.gov.ng</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Business Services</h4>
+                    <ul class="quick-links">
+                        <li><a href="">AV Rentals</a></li>
+                        <li><a href="">Catering Menu</a></li>
+                        <li><a href="contact.html">Tech Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ikorodu Town Hall. Corporate Services Division</p>
+            </div>
+        </div>
     </footer>
-    <section class="multi-hall">
-        <h1>CONFERENCE HALL</h1>
-        <hr>
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>WEEKDAY</th>
-                <th>WEEKEND</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>RATE</strong></td>
-                <td>&#x20A6;580,000.00</td>
-                <td>&#x20A6;600,000.00</td>
-              </tr>
-              <tr>
-                <td><strong>5% CONSUMPTION TAX</strong></td>
-                <td>&#x20A6;29,000.00</td>
-                <td>&#x20A6;30,000.00</td>
-              </tr>
-              <tr>
-                <td><strong>1% SERVICE CHARGE</strong></td>
-                <td>&#x20A6;5,800.00</td>
-                <td>&#x20A6;6,000.00</td>
-              </tr>
-              <tr>
-                <td><strong>REFUNDABLE DEPOSIT</strong></td>
-                <td>&#x20A6;30,000.00</td>
-                <td>&#x20A6;30,000.00</td>
-              </tr>
-              <tr>
-                <td><strong>TOTAL</strong></td>
-                <td>&#x20A6;644,800.00</td>
-                <td>&#x20A6;666,000.00</td>
-              </tr>
-            </tbody>
-        </div>
-        <div>
-          <nav class="btn"><a href="service.html">Book Now</a></nav>
-        </div>
-        
-    </section>
-   
-  
+
+    <script src="js/main.js"></script>
 </body>
 </html>

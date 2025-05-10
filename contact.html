@@ -3,150 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Ikorodu Town Hall</title>
     <link rel="icon" href="./IMG/ADLAT.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add to all pages -->
+<link rel="stylesheet" href="CSS/global.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Signika Negative';
-            background-color: #f4f4f4;
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #ffd700;
+            --accent-color: #ffffff;
+            --text-color: #f5f5f5;
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Signika Negative', sans-serif;
         }
-        .all {
-            width: auto;
-    height: auto;
-    background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(/IMG/HOME-BACKGROUND.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+        body {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                        url(./IMG/HOME-BACKGROUND.jpg) center/cover fixed;
+            color: var(--text-color);
+            line-height: 1.6;
         }
-        header {
-            background-color: transparent;
-            color: #ffffff7e;
-            text-align: center;
-            padding: 1em;
+
+        .contact-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-header {
+            background: rgba(0,0,0,0.8);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-home {
+            color: var(--secondary-color);
             text-decoration: none;
-            font-size: 30px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        header h1 {
+
+        .contact-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .contact-card {
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2.5rem;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-header hr {
+            border: 1px solid var(--secondary-color);
+            width: 100px;
+            margin: 1rem auto;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, var(--secondary-color), #ffdf40);
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .main-footer {
+            background: rgba(0,0,0,0.9);
+            padding: 2rem 1rem;
             margin-top: auto;
         }
-        header hr {
-            border-bottom: solid  1.5px gold;
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
         }
-        section form{
+
+        .footer-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .contact-card {
+                padding: 1.5rem;
+            }
             
-            max-width: 600px;
-            margin:   auto ;
-            padding: 20px;
-            background-color: transparent;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: #f4f4f4;
-            border: 2px solid gold;
-
-    /* Center the form horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+            .contact-header h1 {
+                font-size: 2rem;
+            }
         }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: white;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: gold;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        header a h1{
-            position: absolute;
-            float: left;
-            top: 20px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        footer {
-    background-color: gold;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .contact-info, .social-media {
-    margin-bottom: 20px;
-  }
-  
-  .contact-info h3, .social-media h3 {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
     </style>
 </head>
 <body>
-   <section class="all">
-    <header>
-        <h1>Contact Us</h1>
-        <a href="index.html"><h1>Home</h1></a>
-        <hr>
-    </header>
-    <section>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="contact-container">
+        <header class="main-header">
+            <nav class="nav-content">
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i> Back Home
+                </a>
+                <img src="./IMG/ADLAT.png" alt="Logo" style="height: 40px;">
+            </nav>
+        </header>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <main class="contact-main">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h1>Get in Touch</h1>
+                    <hr>
+                    <p>Have questions? We're here to help!</p>
+                </div>
+                
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-   </section>
-    <footer>
-        <div class="contact-info">
-          <h3>Contact Information</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 789</p>
-          <p>Address: 123 Hall Street, Cityville</p>
-        </div>
-        <div class="social-media">
-          <h3>Follow Us</h3>
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#" target="_blank">Instagram</a>
-        </div>
-      </footer>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hall Street, Ikorodu</p>
+                        <p><i class="fas fa-phone"></i> +234 812 345 6789</p>
+                        <p><i class="fas fa-envelope"></i> contact@ikoroduhall.gov.ng</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

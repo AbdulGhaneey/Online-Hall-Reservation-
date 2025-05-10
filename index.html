@@ -3,49 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="icon" href="IMG/ADLAT.png">
+    <title>ADLAT EVENT CENTRE</title>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="icon" href="./IMG/ADLAT.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
-    <title>Hall Booking</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <section class="header">
-        <div class="nav-link">
-            <h1>IKORODU TOWN HALL RESERVATION SYSTEM</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="hall-booking.html">Hall Booking</a></li>
-                    <li><a href="service.html">Our Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-content">
+            <a href="index.html" class="logo-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <div class="nav-buttons">
+                <a href="hall-booking.html" class="nav-button">Book Hall</a>
+                <a href="service.html" class="nav-button">Services</a>
+                <a href="contact.html" class="nav-button">Contact</a>
+                <img src="./IMG/ADLAT.png" alt="Logo" style="height: 40px;">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero content-card">
+            <div class="logo-section">
+                <img src="./IMG/ADLAT.png" alt="ADLAT EVENT CENTRE Logo" class="main-logo">
+                <h1 class="site-title">ADLAT EVENT CENTRE</h1>
+                <p class="site-tagline">Premier Venue for Memorable Events</p>
+            </div>
+            
+            <div class="cta-group">
+                <a href="hall-booking.html" class="cta-button">
+                    Book Now <i class="fas fa-calendar-check"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features content-card">
+            <h2><i class="fas fa-star"></i> Our Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Large Capacity</h3>
+                    <p>Spaces for 50 to 2000 guests</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Full Security</h3>
+                    <p>24/7 surveillance & personnel</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-plug"></i>
+                    <h3>Power Backup</h3>
+                    <p>Uninterrupted power supply</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Ikorodu Town Hall Complex</li>
+                    <li><i class="fas fa-phone"></i> +234 812 345 6789</li>
+                    <li><i class="fas fa-envelope"></i> info@ikoroduhall.gov.ng</li>
                 </ul>
-            </nav>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="hall-booking.html">Booking Policy</a></li>
+                    <li><a href="contact.html">Get Directions</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="main-hero">
-           <nav>
-            <img src="IMG/ITH.jpg" alt="ADLAT LOGO">
-            <h1><em>...Our Pride</em> </h1>
-            <a href="hall-booking.html">Book Now</a>
-           </nav>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Ikorodu Town Hall. All rights reserved.</p>
         </div>
-    </section>
-    <footer>
-        <div class="contact-info">
-          <h3>Contact Information</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 789</p>
-          <p>Address: 123 Hall Street, Cityville</p>
-        </div>
-        <div class="social-media">
-          <h3>Follow Us</h3>
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#" target="_blank">Instagram</a>
-        </div>
-      </footer>
-    
+    </footer>
 </body>
 </html>

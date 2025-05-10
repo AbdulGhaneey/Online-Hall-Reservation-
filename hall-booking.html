@@ -3,45 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/hall-booking.css">
+    <title>Hall Booking - Ikorodu Town Hall</title>
+    <link rel="stylesheet" href="CSS/global.css">
     <link rel="icon" href="./IMG/ADLAT.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
-    <title>Hall Booking</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <section class="header">
-        <div class="nav-link">
-            <h1><a href="index.html">Go Back</a></h1>
-        </div>
-    </section>
-    <section class="hall-booking">
-        <h1> Hall Booking Menu</h1>
-        <hr>
-        <p>Discover our top-notch facilities and services for your special events.</p>
-        <p>Choose from a variety of halls to suit your event's needs.</p>
-            <div class="hall">
-                <div class="hall-1"><a href="hall-1.html">Multipurpose Hall</a></div>
-                <div class="hall-2"><a href="hall-2.html">Special Hall</a></div>
-                <div class="hall-3"><a href="hall-3.html">Open Hall</a></div>
-                <div class="hall-4"><a href="hall-4.html">Conference Hall</a></div>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-content">
+            <a href="index.html" class="logo-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <div class="nav-buttons">
+                <a href="hall-booking.html" class="nav-button">Book Hall</a>
+                <a href="service.html" class="nav-button">Services</a>
+                <a href="contact.html" class="nav-button">Contact</a>
+                <img src="./IMG/ADLAT.png" alt="Logo" style="height: 40px;">
             </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="content-card halls-listing">
+            <h1 class="page-title"><i class="fas fa-building"></i> Our Halls</h1>
             
-    </section>
-    <footer>
-        <div class="contact-info">
-          <h3>Contact Information</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 789</p>
-          <p>Address: 123 Hall Street, Cityville</p>
+            <div class="hall-grid">
+                <!-- Multipurpose Hall -->
+                <div class="hall-card">
+                    <div class="hall-image" style="background-image: url('/IMG/multipurposeHall.jpg');">
+                        <div class="image-overlay"></div>
+                        <h3>Multipurpose Hall</h3>
+                    </div>
+                    <div class="hall-details">
+                        <div class="hall-features">
+                            <p><i class="fas fa-users"></i> 500 Guests</p>
+                            <p><i class="fas fa-expand"></i> 5000 sq.ft</p>
+                            <p><i class="fas fa-car"></i> 100 Parking</p>
+                        </div>
+                        <a href="hall-1.html" class="cta-button">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Special Hall -->
+                <div class="hall-card">
+                    <div class="hall-image" style="background-image: url('/IMG/SPECIAL\ HALL.jpg');">
+                        <div class="image-overlay"></div>
+                        <h3>Special Hall</h3>
+                    </div>
+                    <div class="hall-details">
+                        <div class="hall-features">
+                            <p><i class="fas fa-users"></i> 200 Guests</p>
+                            <p><i class="fas fa-expand"></i> 2000 sq.ft</p>
+                            <p><i class="fas fa-car"></i> VIP Parking</p>
+                        </div>
+                        <a href="hall-2.html" class="cta-button">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Open Hall -->
+                <div class="hall-card">
+                    <div class="hall-image" style="background-image: url('/IMG/OPEN\ HALL.jpg');">
+                        <div class="image-overlay"></div>
+                        <h3>Open Hall</h3>
+                    </div>
+                    <div class="hall-details">
+                        <div class="hall-features">
+                            <p><i class="fas fa-users"></i> 1000 Guests</p>
+                            <p><i class="fas fa-expand"></i> 1 Acre</p>
+                            <p><i class="fas fa-car"></i> 300 Parking</p>
+                        </div>
+                        <a href="hall-3.html" class="cta-button">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Conference Hall -->
+                <div class="hall-card">
+                    <div class="hall-image" style="background-image: url('/IMG/CONFERENCE\ HALL.jpeg');">
+                        <div class="image-overlay"></div>
+                        <h3>Conference Hall</h3>
+                    </div>
+                    <div class="hall-details">
+                        <div class="hall-features">
+                            <p><i class="fas fa-users"></i> 150 Guests</p>
+                            <p><i class="fas fa-expand"></i> 1500 sq.ft</p>
+                            <p><i class="fas fa-car"></i> 50 Parking</p>
+                        </div>
+                        <a href="hall-4.html" class="cta-button">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Update the footer section -->
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Ikorodu Town Hall Complex</li>
+                <li><i class="fas fa-phone"></i> +234 812 345 6789</li>
+                <li><i class="fas fa-envelope"></i> bookings@ikoroduhall.gov.ng</li>
+            </ul>
         </div>
-        <div class="social-media">
-          <h3>Follow Us</h3>
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#" target="_blank">Instagram</a>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="hall-booking.html">Booking Policy</a></li>
+                <li><a href="contact.html">Get Directions</a></li>
+                <li><a href="service.html">Our Services</a></li>
+            </ul>
         </div>
-      </footer>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2023 Ikorodu Town Hall. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
